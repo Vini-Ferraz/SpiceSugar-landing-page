@@ -6,10 +6,6 @@
     100%{background-color: #f86afd;}
 }
 
-@keyframes aparecer {
-    from{opacity: 0%;}
-    to{opacity: 100%;}
-}
 
 *{
     box-sizing: border-box;
@@ -83,9 +79,6 @@ body{
     font-family: 'Comfortaa', cursive;
     margin-bottom: -1%;
     margin-top: 0;
-    text-align: center;
-    animation-name: aparecer;
-    animation-duration: 2s;
 }
 
 #cardapio {
