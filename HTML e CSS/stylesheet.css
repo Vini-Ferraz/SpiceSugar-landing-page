@@ -10,6 +10,7 @@
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
+
 }
 
 html{
@@ -43,6 +44,10 @@ li{
 }
 
 /**Precisa estar nessa ordem!**/
+
+a {
+    transition-duration: 0.20s;
+}
 
 a:link {
     color:aliceblue;
@@ -81,11 +86,10 @@ body{
     margin-top: 0;
 }
 
-#cardapio {
+#cardapio, #avaliacoes {
     font-size: 4rem;
     font-family: 'Comfortaa', cursive;
     text-align: center;
-    
 }
 
 /**Parágrafo**/
@@ -100,10 +104,10 @@ body{
 
 /**FlexBox**/
 .caixa-1{
-    width:100%;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .caixa-inicio{
@@ -115,10 +119,9 @@ body{
     border-bottom: 2px solid black;
 }
 
-img{
+.img-inicial{
     width: 35vw;
-    height: 95vh;
-    border-radius: 10px;;
+    padding-top: 10%;
 }
 
 hr {
@@ -208,4 +211,91 @@ hr {
     grid-column-end: 6;
     align-items: center;
     padding-left: 20px;
+}
+
+/*Começo da formatação dos comentários.*/
+
+.caixa-avaliacoes {
+    /*background-color: aqua;*/
+    width: 100vw;
+}
+
+.caixa-avaliacoes-grid {
+    /*background-color: rgb(43, 255, 0);*/
+    margin: auto;
+    display: grid;
+    gap: 1%;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90vw;
+}
+
+#ana {
+    /**background-color: rgb(38, 0, 255);**/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#joao {
+    /**background-color: blue;**/
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+#paula {
+    /*background-color: blue;*/
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#pedro {
+    /*background-color: blue;*/
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.cliente {
+    background-color: #ef3dff;
+    border: 2px solid black;
+    padding: 10px 10px 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    transition-duration: 0.8s;
+}
+
+.cliente:hover{
+    transform: scale(1.08);
+    background-color: #6c38cc;
+}
+
+.comentario {
+    text-align: justify;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.nome-cliente {
+    font-family: 'Comfortaa', cursive;
+    font-size: 3vw;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+    padding-left: 4px;
+}
+
+.comentario {
+    font-family: 'Karla', sans-serif;
+    font-size: 2vw;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.fotos-clientes {
+    width: 8vw;
+    height: 16vh;
+    border-radius: 100px;
+    border: 3px solid black;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
