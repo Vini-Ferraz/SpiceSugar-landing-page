@@ -74,7 +74,7 @@ a:active {
 body{
     background-color: #f86afd;
     animation-name: fundo;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
 }
 
@@ -221,7 +221,6 @@ hr {
 }
 
 .caixa-avaliacoes-grid {
-    /*background-color: rgb(43, 255, 0);*/
     margin: auto;
     display: grid;
     gap: 1%;
@@ -234,7 +233,7 @@ hr {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 3;
 }
 
 #joao {
@@ -266,14 +265,10 @@ hr {
 
 .cliente:hover{
     transform: scale(1.08);
-    background-color: #6c38cc;
+    background-color: #3a1977;
+    color: rgb(202, 202, 202);
 }
 
-.comentario {
-    text-align: justify;
-    grid-column-start: 1;
-    grid-column-end: 5;
-}
 
 .nome-cliente {
     font-family: 'Comfortaa', cursive;
@@ -289,6 +284,9 @@ hr {
     font-size: 2vw;
     grid-row-start: 2;
     grid-row-end: 4;
+    text-align: justify;
+    grid-column-start: 1;
+    grid-column-end: 5;
 }
 
 .fotos-clientes {
