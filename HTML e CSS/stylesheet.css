@@ -306,10 +306,13 @@ hr {
     #menu {
         width: 100%;
         position: absolute;
+        padding: 10px 0 10px 0;
+        position: fixed;
     }
 
-    #SpiceSugar {
+    #SpiceSugar, #cardapio-titulo {
         font-size: 4rem;
+        padding-bottom: 10%;
     }
 
     .texto-inicial {
@@ -326,10 +329,47 @@ hr {
 
     .caixa-inicio {
         width: 75vw;
+        border: 1px solid black;
+        padding: 10px;
+        margin: auto;
     }
 
     #caixa-inicial{
-        display: block;
+        margin: auto;
+        margin-top: 15%;
     }
+
+    hr {
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    /*Cardápio*/
     
+    .foto {
+        display: none;
+    }
+
+    .nome-cupcake, .valor {
+        font-size: 2rem;
+    }
+
+    .caixa-sabor {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding-bottom: 5%;
+        padding-top: 7%;
+    }
+
+    .descricao {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+
+    .descricao-cupcake {
+        font-size: 1.5rem;
+        padding-top: 5%;
+    }
 }
